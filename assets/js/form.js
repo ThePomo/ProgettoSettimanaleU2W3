@@ -14,7 +14,7 @@ const priceInput = document.getElementById("price");
 const saveButton = document.getElementById("save-btn");
 
 if (productId) {
-  formTitle.textContent = "Modifica Prodotto";
+  formTitle.innerText = "Modifica Prodotto";
 
   fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
     headers: { Authorization: `Bearer ${token}` },
